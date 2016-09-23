@@ -1,0 +1,247 @@
+/* reset */
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin:0;padding:0;}
+em{font-style:normal}
+li{list-style:none}
+a{text-decoration:none;}
+img{border:none; vertical-align:top;}
+table{border-collapse:collapse;}
+textarea{ resize:none;overflow:auto;}
+/* end reset */
+
+#home,#about,.about_me,.my_skill,#portfolio,#services,.featured,.newsletter,#contact,.get_touch,.form{ width: 100%;}
+#home{ height: 565px; background: rgb(206,215,223); }
+#about{  }
+.about_me{ height: 542px; background: rgb( 118,184,82); }
+.my_skill{ height: 420px; background: rgb(50,59,67); }
+#portfolio{ height: 1050px; background: rgb(206,215,223); }
+.featured{ height: 660px; background: rgb(89,98,106); }
+.newsletter{ height: 335px; background: rgb(108,184,82); }
+.get_touch{ height: 270px;  background: rgb(206,215,223); }
+.form{height: 620px;  background: rgb( 118,184,82); }
+
+#backTop{ width: 32px; height: 32px; background: url(../images/arr.png) no-repeat; position: fixed; bottom: 55px; right: 20px; display: block; }
+
+#home{  padding-top: 95px; }
+#home .peak{ position: relative; overflow: hidden; width: 320px; height: 140px;  top: 0px; left: 395px;}
+#home p{font-size: 120px; width: 320px; position: absolute; top: 0; left: 0;  color: rgb(35,35,43); transition: 200ms;}
+#home .move{width: 10px; font-size: 120px; position: absolute; top: 0px; left: 0px; height: 140px; color: rgb(78,172,255); overflow: hidden;}
+#home ul{margin-left: 395px; margin-top: 40px;}
+#home li{width: 328px; height: 59px; }
+#home li:nth-child(1) a{ width: 204px; }
+#home li:nth-child(2) a{ width: 270px; }
+#home li:nth-child(3) a{ width: 338px; }
+#home li:nth-child(4) a{ width: 330px; }
+#home li:nth-child(5) a{ width: 234px; }
+/*#home a:nth-of-type(2){ width: 300px; }*/
+#home a{
+	display: inline-block; 
+	height: 40px; 
+	background: white; 
+	line-height: 40px; 
+	font-size: 17px;
+	text-align: center;
+	color: #323b43;
+}
+#home li span{ opacity: 0 ;  }
+#home img{ width: 416px; height: 602px; position: absolute; top: 60px; left: 900px; }
+
+/*.about_me{padding-left: 380px; }*/
+.about_me strong,.newsletter h2{ display: inline-block; font-weight: normal; width: 1142px; height: 50px; line-height: 50px; font-size: 50px; color: rgb(50,59,67); margin-top: 80px; text-align: center; }
+.about_me .who{ width: 1142px; height: 146px; }
+.who .para{width: 810px; height: 50px; margin: 0 auto; text-align: center; }
+.title_mode{ width: 1142px; height: 45px; line-height: 45px; font-size: 17px; text-align: center; font-style: italic; color: rgb(217,255,196);}
+.about_me .what_left{ width: 561px; height: 156px; float: left; margin-right: 20px; margin-left: 381px; }
+.about_me .goal_right{ width: 561px; height: 156px; float: left; }
+.about_me strong,.about_me .who{ margin-left: 381px; }
+
+.title{ color: #d9ffc4; font-size: 24px; text-align: left; }
+.para{  color: #fff;  font-size: 14px; line-height: 1.8em; margin-top: 40px; }
+
+.my_skill{ padding-top: 80px; }
+.my_skill h4{ width: 1140px; height: 48px; color: #ced7df; font-size: 44px; text-align: center; margin: 0 auto; }
+.my_skill ul{ height: 230px; width: 1144px; margin: 60px auto; }
+.my_skill li{ height: 230px; width: 286px; float: left;}
+.my_skill span{ 
+	 display: inline-block; 
+	 font-size: 56px; 
+	 height: 160px; 
+	 line-height: 160px; 
+	 width: 160px;
+	 border-radius: 50%; 
+	 color: white; 
+	 text-align: center; 
+	 border: 10px solid #fff;
+	 margin-left: 63px;
+}
+.my_skill p{ font-size: 22px; color: #ced7df; margin: 34px 0 0; text-align: center; }
+
+#portfolio{ padding-top: 80px; }
+#portfolio h2, .featured h2 ,.get_touch h2{ color: #76b852; font-size: 44px; text-align: center; width: 1149px; text-align: center; margin: 0 auto; }
+.pic_list{ width: 1149px; height: 798px; margin: 0px auto; padding-top: 50px;}
+.pic_list li{height: 256px; float: left; margin: 0 10px 10px 0;  position: relative; overflow: hidden;}
+.pic_list img{ width: 353px; height: 236px; border: 10px solid #fff;}
+.meng{ position: absolute; top: 10px; left: 10px; background: #ced7df; width: 353px; height: 236px; display: none;  }
+.meng h5{ font-size: 32px; color: #666; line-height: 236px; text-align: center; }
+
+
+@keyframes warn {  
+    0% {  
+        transform: scale(0);
+    }
+    100% {  
+        transform: scale(1);
+    }  
+}  
+@-webkit-keyframes warn {  
+    0% {  
+        -webkit-transform: scale(0);
+    }
+    100% {  
+        -webkit-transform: scale(1);
+    }  
+}  
+@-moz-keyframes warn {  
+    0% {  
+        -moz-transform: scale(0);
+    }
+    100% {  
+        -moz-transform: scale(1);
+    }  
+}  
+
+@keyframes warn_out {  
+    0% {  
+        transform: scale(1);
+    }
+    100% {  
+        transform: scale(0);
+    }  
+}  
+@-webkit-keyframes warn_out {  
+    0% {  
+        -webkit-transform: scale(1);
+    }
+    100% {  
+        -webkit-transform: scale(0);
+    }  
+}  
+@-moz-keyframes warn_out {  
+    0% {  
+        -moz-transform: scale(1);
+    }
+    100% {  
+        -moz-transform: scale(0);
+        /*opacity: 0;*/
+    }  
+} 
+.featured .ina{-moz-transform: scale(0);}
+.featured .dot {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: red;
+    -webkit-border-radius: 50%;  
+    -moz-border-radius: 50%;  
+    border-radius: 50%;
+    -webkit-animation: warn_out 500ms;  
+    -moz-animation: warn_out 500ms;  
+    animation: warn_out 500ms;
+    -webkit-animation-direction:alternate;
+    -moz-animation-direction:alternate;
+    animation-direction:alternate;
+}  
+/* 产生动画（向外扩散变大）的圆圈  */  
+.featured .pulse {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: red;
+    -webkit-border-radius: 50%;  
+    -moz-border-radius: 50%;  
+    border-radius: 50%;
+    -webkit-animation: warn 500ms;  
+    -moz-animation: warn 500ms;  
+    animation: warn 500ms;
+}
+.featured .icon{ position: absolute; top: 0; left: 138px; }  
+.featured{ padding-top: 80px; }
+.featured ul{ width: 1143px; height: 470px; margin: 0 auto; padding-top: 14px; }
+.featured li{ width: 381px; height: 242px; float: left; margin-top: 30px; position: relative; }
+.featured div{
+	width: 105px; 
+	height: 105px; 
+	border-radius: 50%; 
+	background: #323b43; 
+	/*margin-left: 138px;*/
+	/*position: relative;*/
+
+	position: absolute; 
+	top: 0; 
+	left: 138px;
+}
+/*.featured .icon{ background: rgb(50,59,67); }*/
+.featured h3{ 
+	width: 381px; 
+	height: 25px; 
+	line-height: 25px; 
+	color: #76b852; 
+	font-size: 20px; 
+	margin: 20px 0 16px;
+	text-align: center; 
+	padding-top: 105px; 
+}
+.featured p{ margin: 7px 0; width: 352px; height: 52px; text-align: center; }
+.featured li:nth-child(odd) div{ background: rgb(118,184,82); }
+.featured li:nth-child(odd) h3{ color: #ced7df; }
+.featured li:hover .icon{ width: 105px; }
+.featured .img{ width: 50px; height: 50px; position: absolute; top: 27px; left: 164px; z-index: 2; }
+
+.wrap{ padding-left:20%;}
+.newsletter h2{}
+.newsletter  p{ width: 1142px; height: 26px; text-align: center; margin-top: 16px; }
+.newsletter  form{ width: 1142px; text-align: center; margin-top: 35px; }
+.text{  width: 450px; height: 20px; color: #898888; font-size: 14px; padding: 15px; }
+.submit{
+	 height: 50px; 
+	 width: 208px; 
+	 background: #323b43; 
+	 color: #fff; 
+	 font-size: 18px; 
+	 padding: 13px 10px 12px; 
+	 border: none;
+	 margin-left: -3px;
+}
+
+.get_touch{ padding-top: 80px; }
+.get_touch h2{ font-weight: normal; }
+.get_touch h4{ 
+	width: 196px; 
+	height: 30px;
+	color: rgb(149,137,137); 
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+	margin: 8px auto;
+}
+.get_touch p{
+	width: 572px;
+	height: 52px;
+	margin: 4px auto;
+	color: #000;
+	text-align: center;
+}
+
+.form{ padding-top: 80px; }
+.form .container{ width: 1143px; height: 600px; margin: 0 auto; }
+.form ul{ width: 1143px; height: 110px; margin: 0 auto;}
+.form li{ width: 381px; height: 110px; float: left; }
+.form img{ width: 40px; height: 40px; margin-left: 155px; }
+.form .para{ width: 215px; margin: 30px auto; text-align: center; }
+.form a{ display: block; }
+.form a:hover{ color: #ccc; }
+.form .text{ width: 325px; border: 1px solid red; color: #c9c9c9; margin-top: 80px; }
+.form .text1{ margin: 0 26px; }
+.form .textarea{ margin-top: 20px; width: 1143px; height: 200px; }
+.form .submit{ margin-top: 20px; margin-left: 3px; }
+.form .submit:hover{ background: rgb(206,215,223); }
